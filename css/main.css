@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+section {
+  margin-bottom: 66px;
+  padding: 12px;
+}
+
+.applinks {
+  display: flex;
+  justify-content: center;
+  padding: 66px 0;
+  align-items: center;
+}
+@media (max-width: 666px) {
+  .applinks {
+    flex-direction: column;
+  }
+}
+
+.applink {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  margin: 15px;
+  width: 200px;
+  height: 200px;
+  background: #66B032;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.applinks :first-child {
+  background: #8601AF;
+}
+.applinks :last-child {
+  background: #FB9902;
+}
+.applink:hover {
+  border-radius: none;
+  background: #222;
+}
+
+.main {
+  margin-top: 66px;
+}
+
+
+footer {
+  background: #f7931a;
+  color: white;
+  padding: 14px;
+  margin-top: 32px;
+}
+
+footer a {
+  color: white;
+}
+
+.rotate {
+  animation: rotation 3s;
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
