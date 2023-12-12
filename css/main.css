@@ -4,6 +4,8 @@ body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   margin: 0;
+  background: #122;
+  color: #eee;
 }
 
 section {
@@ -37,10 +39,18 @@ section {
   align-items: center;
   border-radius: 100%;
 }
-.applinks :first-child {
+
+.applink.wallet {
+  background: #66B032;
+}
+.applink.coins {
+  background: blue;
+}
+.applink.lnbits {
   background: #8601AF;
 }
-.applinks :last-child {
+
+.applink.donate {
   background: #FB9902;
 }
 .applink:hover {
@@ -52,16 +62,8 @@ section {
   margin-top: 66px;
 }
 
-
-footer {
-  background: #f7931a;
-  color: white;
-  padding: 14px;
-  margin-top: 32px;
-}
-
-footer a {
-  color: white;
+a {
+  color: #f7931a;
 }
 
 .rotate {
