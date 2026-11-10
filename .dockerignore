@@ -1,0 +1,5 @@
+.git
+.github
+.dockerignore
+Dockerfile
+img/btc_orig.png
